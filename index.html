@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Government Certificate Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #f8f9ff;
+            --bg-color: #ffffff;
+            --sidebar-bg: #f5f7fa;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-color: #e0e0e0;
+            --user-bubble: #1a73e8;
+            --bot-bubble: #f0f4f8;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 280px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border-color);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-section h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-item {
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-item:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar-item i {
+            color: var(--text-light);
+            font-size: 16px;
+            width: 24px;
+            text-align: center;
+        }
+
+        /* Main Chat Area */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .chat-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-history {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: var(--bg-color);
+        }
+
+        /* Messages */
+        .message {
+            max-width: 80%;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bot-message {
+            align-self: flex-start;
+        }
+
+        .user-message {
+            align-self: flex-end;
+        }
+
+        .message-content {
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .bot-message .message-content {
+            background-color: var(--bot-bubble);
+            color: var(--text-color);
+            border-top-left-radius: 4px;
+        }
+
+        .user-message .message-content {
+            background-color: var(--user-bubble);
+            color: white;
+            border-top-right-radius: 4px;
+        }
+
+        .message-time {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        .user-message .message-time {
+            text-align: right;
+        }
+
+        /* Input Area */
+        .input-container {
+            padding: 16px;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+        }
+
+        .input-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-color);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .input-box textarea {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            color: var(--text-color);
+            font-size: 15px;
+            resize: none;
+            height: 48px;
+            max-height: 200px;
+            outline: none;
+            font-family: inherit;
+            border-radius: 24px;
+        }
+
+        .input-box button {
+            background: transparent;
+            border: none;
+            color: var(--primary-color);
+            padding: 0 20px;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-box button i {
+            font-size: 20px;
+        }
+
+        .input-box button:hover {
+            color: var(--primary-color);
+            opacity: 0.8;
+        }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            display: flex;
+            padding: 10px 20px;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dots span {
+            width: 8px;
+            height: 8px;
+            background-color: var(--text-light);
+            border-radius: 50%;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+
+        .typing-dots span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .typing-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typingAnimation {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-4px); }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">
+                <i class="fas fa-robot"></i>
+                <span>QueryGov</span>
+            </div>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="sidebar-section">
+                <h3>Certificates</h3>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Birth Certificate')">
+                    <i class="fas fa-baby"></i>
+                    <span>Birth Certificate</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Caste Certificate')">
+                    <i class='fas fa-atom'></i>
+                    <span>Caste Certificate</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Ration Card')">
+                    <i class='fas fa-atom'></i>
+                    <span>Ration Card</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Passport')">
+                    <i class='fas fa-atom'></i>
+                    <span>Passport</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Death Certificate')">
+                    <i class='fas fa-atom'></i>
+                    <span>Death Certificate</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Income Certificate')">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income Certificate</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Domicile Certificate')">
+                    <i class="fas fa-house-user"></i>
+                    <span>Domicile Certificate</span>
+                </div>
+                <div class="sidebar-item" onclick="processButtonClick('Tell me about Marriage Certificate')">
+                    <i class="fas fa-ring"></i>
+                    <span>Marriage Certificate</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Services Available</h3>
+                <div class="sidebar-item" >
+                    <i class="fas fa-question-circle"></i>
+                    <span>How to Apply?</span>
+                </div>
+                <div class="sidebar-item" >
+                    <i class="fas fa-file-alt"></i>
+                    <span>Required documents</span>
+                </div>
+                <div class="sidebar-item" >
+                    <i class="fas fa-clock"></i>
+                    <span>Processing time</span>
+                </div>
+                <div class="sidebar-item" >
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Fees information</span>
+                </div>
+                <div class="sidebar-item" >
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Eligibility</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Issusing Authority</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Chat Section -->
+    <div class="main-content">
+        <div class="chat-header">
+            <div class="chat-title">Government Services Assistant</div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-history" id="chat-history">
+                <!-- Messages will appear here -->
+            </div>
+
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Assistant is typing</span>
+            </div>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="user-input" placeholder="Ask about government services..." rows="1"></textarea>
+                    <button id="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatHistory = document.getElementById("chat-history");
+        const userInput = document.getElementById("user-input");
+        const sendButton = document.getElementById("send-button");
+        const typingIndicator = document.getElementById("typing-indicator");
+
+        // Auto-resize textarea
+        userInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+
+        function appendMessage(message, sender = "bot") {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = `message ${sender}-message`;
+
+            const contentDiv = document.createElement("div");
+            contentDiv.className = "message-content";
+            contentDiv.textContent = message;
+
+            const timeDiv = document.createElement("div");
+            timeDiv.className = "message-time";
+            timeDiv.textContent = getCurrentTime();
+
+            messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(timeDiv);
+            chatHistory.appendChild(messageDiv);
+
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+            return messageDiv;
+        }
+
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // Function for sidebar button clicks
+        function processButtonClick(msgText) {
+            const message = msgText.trim();
+            if (message === "") return;
+
+            appendMessage(message, "user");
+
+            // Predefined responses for button clicks
+            setTimeout(() => {
+                const responses = {
+                    "birth certificate": "To apply for a birth certificate, you need to visit the municipal corporation office with proof of birth and identity documents. The process typically takes 7-10 working days.",
+                    "caste certificate": "Caste certificates are issued by the Revenue Department. You'll need to submit proof of caste, residence proof, and an application form at the local Tehsil office.",
+                    "income certificate": "Income certificates are issued by the Tahsildar office. You need to submit salary slips, affidavit of income, and other supporting documents.",
+                    "ration card": "An official document issued by the state government for purchasing subsidized food and essential items under the Public Distribution System (PDS).",
+                    "passport": " An official travel document issued by the Government of India that allows international travel and serves as identity proof.",
+                    "death certificate": "An official document issued by the government that records the date, time, and cause of a person's death, required for legal and administrative purposes.",
+                    "marriage certificate": "A legal document that serves as proof of a registered marriage between two individuals.",
+                    "domicile certificate": "An official document certifying that a person is a permanent resident of a particular state or union territory in India."
+                };
+
+                const lowerMsg = message.toLowerCase();
+                let response = "I can help you with information about government certificates and services. Please ask a specific question.";
+
+                for (const [key, value] of Object.entries(responses)) {
+                    if (lowerMsg.includes(key)) {
+                        response = value;
+                        break;
+                    }
+                }
+
+                appendMessage(response, "bot");
+            }, 800);
+        }
+
+        // Function for user-typed messages (will call Rasa API)
+        async function processUserMessage() {
+            const message = userInput.value.trim();
+            if (message === "") return;
+
+            appendMessage(message, "user");
+            userInput.value = "";
+            userInput.style.height = 'auto';
+            typingIndicator.style.display = 'flex';
+
+            try {
+                // Call Rasa API
+                const rasaUrl = "http://localhost:5005/webhooks/rest/webhook";
+
+                const response = await fetch(rasaUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        sender: "user_" + Date.now(),
+                        message: message
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                typingIndicator.style.display = 'none';
+
+                if (data && data.length > 0) {
+                    // Combine all response texts
+                    const fullResponse = data.map(item => item.text).join('\n\n');
+                    appendMessage(fullResponse, "bot");
+                } else {
+                    appendMessage("I didn't understand that. Could you please rephrase your question?", "bot");
+                }
+            } catch (error) {
+                console.error("Error calling Rasa API:", error);
+                typingIndicator.style.display = 'none';
+                appendMessage("Sorry, I'm having trouble connecting to the service. Please try again later.", "bot");
+            }
+        }
+
+        // Event listeners
+        sendButton.addEventListener("click", processUserMessage);
+        userInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                processUserMessage();
+            }
+        });
+
+        // Initial bot greeting
+        setTimeout(() => {
+            appendMessage("Hello! I'm your government services assistant. How can I help you today?", "bot");
+        }, 500);
+    </script>
+</body>
+</html>

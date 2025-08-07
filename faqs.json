@@ -1,0 +1,44 @@
+{
+    "faqs": [
+        {
+            "question": "How do I apply for a birth certificate?",
+            "answer": "You can apply for a birth certificate online through the government portal or by visiting your local municipal office. Required documents include proof of birth, parents' identification, and address proof."
+        },
+        {
+            "question": "What documents are needed for a passport?",
+            "answer": "For a passport, you need proof of identity (Aadhaar card, PAN card), proof of address (electricity bill, rental agreement), birth certificate, and passport-sized photographs."
+        },
+        {
+            "question": "How long does it take to process a driving license?",
+            "answer": "The processing time for a driving license is typically 7-10 working days after passing the driving test. You can track the status online using your application number."
+        },
+        {
+            "question": "Can I renew my passport online?",
+            "answer": "Yes, you can renew your passport online through the Passport Seva website. You need to fill out the renewal form, upload required documents, and schedule an appointment at the nearest Passport Seva Kendra."
+        },
+        {
+            "question": "What is the validity of a marriage certificate?",
+            "answer": "A marriage certificate is valid for a lifetime and does not require renewal. It serves as legal proof of marriage and is required for various legal processes."
+        },
+        {
+            "question": "How can I check the status of my certificate application?",
+            "answer": "You can check the status of your application online using the application reference number provided during submission. Visit the respective government portal and enter your details."
+        },
+        {
+            "question": "What is the cost of a domicile certificate?",
+            "answer": "The cost of a domicile certificate varies by state but is generally around ₹100. This includes the stamp paper and processing fees."
+        },
+        {
+            "question": "Can I apply for a duplicate certificate if I lose the original?",
+            "answer": "Yes, you can apply for a duplicate certificate by submitting an affidavit and required documents at the issuing office. A nominal fee may be charged for the duplicate copy."
+        },
+        {
+            "question": "What is the Tatkal service for passports?",
+            "answer": "The Tatkal service is for urgent passport issuance. It costs ₹3,500 and processes applications within 1-3 days. You need to provide proof of urgency along with the required documents."
+        },
+        {
+            "question": "How do I update my address on my driving license?",
+            "answer": "To update your address, visit the Regional Transport Office (RTO) with proof of new address (e.g., electricity bill, rental agreement) and your existing license. A small fee may apply."
+        }
+    ]
+}

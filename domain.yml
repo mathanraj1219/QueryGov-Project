@@ -1,0 +1,110 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - affirm
+  - deny
+  - certificate_info
+  - application_process
+  - documents_required
+  - check_eligibility
+  - certificate_cost
+  - issuing_authority
+  - processing_time
+  - online_application
+  - duplicate_certificate
+  - certificate_correction
+  - certificate_renewal
+  - certificate_emergency
+  - certificate_validity
+
+entities:
+  - certificate_type
+  - location
+  - deed_type
+
+slots:
+  certificate_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: certificate_type
+      conditions:
+      - active_loop: null
+  deed_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: deed_type
+
+responses:
+  utter_greet:
+  - text: "Namaste! Welcome to the Government Certificate Assistant. How may I help you today?"
+    buttons:
+    - title: "Birth Certificate"
+      payload: "/certificate_info{\"certificate_type\":\"birth certificate\"}"
+    - title: "PAN Card"
+      payload: "/certificate_info{\"certificate_type\":\"PAN card\"}"
+    - title: "Passport"
+      payload: "/certificate_info{\"certificate_type\":\"passport\"}"
+
+  utter_goodbye:
+  - text: "Dhanyavaad! Please visit again if you need more assistance with government certificates."
+
+  utter_thanks:
+  - text: "You're welcome! Let me know if you need any other certificate information."
+
+  utter_ask_certificate_type:
+  - text: "Which government certificate would you like information about?"
+    buttons:
+    - title: "See all certificates"
+      payload: "/list_certificates"
+
+  utter_offer_more_help:
+  - text: " "
+    buttons:
+    - title: "Application Process"
+      payload: "/application_process"
+    - title: "Required Documents"
+      payload: "/documents_required"
+    - title: "No, thank you"
+      payload: "/deny"
+
+actions:
+- action_provide_certificate_info
+- action_provide_application_process
+- action_provide_documents_list
+- action_check_eligibility
+- action_provide_cost_info
+- action_provide_issuing_authority
+- action_provide_processing_time
+- action_provide_online_application_info
+- action_provide_duplicate_info
+- action_provide_correction_info
+- action_provide_renewal_info
+- action_provide_validity_info
+- action_provide_emergency_info
+- action_reset_certificate_type
+- action_provide_electricity_bill_info
+- action_provide_new_connection_info
+- action_provide_bill_payment_info
+- action_provide_land_registration_info
+- action_provide_land_registration_types
+- action_provide_stamp_duty_info
+- action_provide_mutation_info
+- action_provide_encumbrance_info
+- action_provide_land_registration_details
+- ask_land_registration_types
+- ask_stamp_duty
+- ask_mutation_process
+- ask_encumbrance_certificate
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
