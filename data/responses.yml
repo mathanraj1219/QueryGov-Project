@@ -1,0 +1,33 @@
+version: "3.1"
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you with certificate information today?"
+    - text: "Hi there! What certificate information do you need?"
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to ask if you have more questions about certificates."
+    - text: "See you later! Let me know if you need any certificate help in the future."
+
+  utter_thankyou:
+    - text: "You're welcome! Let me know if you need anything else."
+    - text: "Happy to help! Ask away if you have more questions."
+
+  utter_out_of_scope:
+    - text: "I'm designed to help with certificate information. Could you ask about birth certificates, passports, or similar documents?"
+    - text: "I specialize in certificate information. Try asking about marriage certificates, driving licenses, etc."
+
+  utter_ask_certificate_type:
+    - text: "Which certificate are you asking about? For example: birth certificate, passport, etc."
+    - text: "Could you specify which certificate you need information about?"
+
+  utter_data_unavailable:
+    - text: "I'm having trouble accessing that information right now. Please try again later."
+    - text: "Our certificate database is temporarily unavailable. Please check back soon."
+
+  utter_unknown_certificate:
+    - text: "I don't have information about '{certificate_type}'. {suggestions}"
+    - text: "Sorry, I don't recognize '{certificate_type}'. {suggestions}"
+
+  utter_iamabot:
+    - text: "I'm an AI assistant here to help with certificate information. How can I assist you?"
