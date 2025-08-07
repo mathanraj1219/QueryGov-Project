@@ -1,0 +1,947 @@
+{
+    "birth_certificate": {
+        "name": "Birth Certificate",
+        "definition": "An official document that records a person's birth, including date, time, place, and parent details. It is required for identity proof, education, passport applications, and government benefits.",
+        "issuing_authority": "Municipal Corporation, Town Panchayat, or Village Panchayat Office",
+
+        "eligibility": {
+            "who_can_apply": "Parents or guardians of a newborn child.",
+            "registration_deadline": "Birth must be registered within 21 days of occurrence.",
+            "late_registration": {
+                "21-30 days": "Late fee applicable.",
+                "30 days - 1 year": "Approval required from Revenue Officer with an affidavit.",
+                "After 1 year": "Court order required along with supporting documents."
+            }
+        },
+
+        "documents_needed": [
+            "Hospital birth report (for institutional births).",
+            "Declaration by parents (for home births).",
+            "Aadhaar card of parents.",
+            "Marriage certificate of parents (if applicable).",
+            "Address proof (Ration Card, Voter ID, Electricity Bill)."
+        ],
+
+        "application_process": {
+            "steps": [
+                "Visit the local Municipal Office or apply online at the state e-district portal.",
+                "Fill the Birth Registration Form with child's details.",
+                "Attach the required documents.",
+                "Pay any applicable fees for late registration or additional copies.",
+                "Certificate will be issued within 7-10 working days."
+            ],
+            "processing_time": "7-10 working days for timely registration, 30+ days for late registration.",
+            "where_to_apply": "Municipal Office, Panchayat Office, or Online at https://tnedistrict.tn.gov.in"
+        },
+
+        "cost": {
+            "first_copy": "Free if applied within 21 days.",
+            "additional_copies": "₹50 per copy.",
+            "late_registration_fees": {
+                "21-30 days": "₹200",
+                "30 days - 1 year": "₹500 + affidavit",
+                "After 1 year": "Court order required + ₹1,000"
+            }
+        },
+
+        "name_inclusion_or_correction": {
+            "when_required": "Correction of child's name, spelling mistakes, or missing details.",
+            "documents_needed": [
+                "Original birth certificate.",
+                "Parent's Aadhaar card.",
+                "Affidavit stating the correction required.",
+                "Gazette notification (if name change is significant)."
+            ],
+            "steps": [
+                "Submit a correction request at the Municipal Office or online portal.",
+                "Provide supporting documents for verification.",
+                "Pay correction fees (₹200 - ₹500 depending on change).",
+                "Receive an updated birth certificate within 15-30 working days."
+            ],
+            "processing_time": "15-30 working days."
+        },
+
+        "duplicate_certificate": {
+            "when_needed": "Loss or damage of original birth certificate.",
+            "how_to_get": [
+                "Visit the Municipal Office with an application for a duplicate certificate.",
+                "Provide original details (child’s name, birth date, parent details).",
+                "Pay the duplicate certificate fee (₹50).",
+                "Receive a copy within 7 working days."
+            ],
+            "online_download": "Check availability on state e-district portals."
+        },
+
+        "common_questions": {
+            "how_to_apply_if_born_in_a_different_city": "Apply in the municipality where the birth occurred.",
+            "is_birth_certificate_mandatory_for_aadhaar": "Yes, it is required as proof for minors.",
+            "how_to_get_a_certificate_for_unregistered_births": "Apply with an affidavit and supporting documents, subject to approval by the Revenue Department."
+        }
+    },
+
+    "marriage_certificate": {
+        "name": "Marriage Certificate",
+        "definition": "A legal document that serves as proof of a registered marriage between two individuals.",
+        "issuing_authority": "Registrar of Marriages, Sub-Registrar Office, or Municipality",
+
+        "eligibility": {
+            "who_can_apply": "Couples who are legally married under Hindu Marriage Act, Special Marriage Act, or other religious acts.",
+            "requirements": [
+                "Both individuals must be of legal marriageable age (Male: 21 years, Female: 18 years).",
+                "Marriage must be solemnized and conducted according to religious or legal customs.",
+                "Application must be filed within 30-90 days of marriage."
+            ],
+            "special_cases": {
+                "interfaith_marriages": "Couples from different religions must register under the Special Marriage Act.",
+                "NRI marriages": "Marriage certificate required for visa and legal purposes."
+            }
+        },
+
+        "documents_needed": [
+            "Marriage application form.",
+            "Wedding invitation card.",
+            "Wedding photos (including couple with priest).",
+            "Aadhaar card of both spouses.",
+            "Address proof of both spouses (Voter ID, Ration Card, Passport).",
+            "Two passport-sized photos of each spouse.",
+            "Affidavit stating marriage details.",
+            "Identity proof of two witnesses."
+        ],
+
+        "application_process": {
+            "steps": [
+                "Visit the Sub-Registrar Office or apply online at https://tnreginet.gov.in.",
+                "Fill the marriage registration form with details.",
+                "Submit supporting documents and witness details.",
+                "Pay the applicable registration fee.",
+                "Marriage verification by the Registrar.",
+                "Receive the marriage certificate within 15-30 working days."
+            ],
+            "processing_time": "15-30 working days.",
+            "where_to_apply": "Registrar of Marriages (Sub-Registrar Office), Municipality, or Online at https://tnreginet.gov.in"
+        },
+
+        "cost": {
+            "registration_fee": "₹200 under Hindu Marriage Act, ₹500 under Special Marriage Act.",
+            "late_registration_penalty": "₹500 if applied after 90 days of marriage."
+        },
+
+        "correction_or_duplicate_certificate": {
+            "when_required": "Correction of name, date, or missing details, or re-issue due to loss.",
+            "documents_needed": [
+                "Original marriage certificate (if available).",
+                "Aadhaar card and proof of marriage.",
+                "Affidavit stating the correction needed."
+            ],
+            "steps": [
+                "Submit a correction request at the Registrar Office.",
+                "Provide supporting documents.",
+                "Pay correction fees (₹200 - ₹500 depending on change).",
+                "Receive updated certificate within 15 working days."
+            ],
+            "duplicate_certificate_fee": "₹100 per copy."
+        },
+
+        "common_questions": {
+            "can_a_marriage_be_registered_after_years": "Yes, but with late fees and additional affidavits.",
+            "is_marriage_certificate_mandatory": "Yes, required for name change, visa applications, and legal claims.",
+            "can_unmarried_couples_apply": "No, proof of solemnized marriage is mandatory."
+        }
+    },
+
+    "domicile_certificate": {
+        "name": "Domicile Certificate",
+        "definition": "An official document certifying that a person is a permanent resident of a particular state or union territory in India.",
+        "issuing_authority": "Tahsildar Office, Revenue Department, e-Seva Centers",
+
+        "eligibility": {
+            "who_can_apply": "Any individual who has resided in a state for a specified period and requires proof of residence.",
+            "residency_requirement": "Applicant must have resided in the state for at least 5-15 years (varies by state).",
+            "applicable_for": [
+                "State government job applications.",
+                "Educational admissions and scholarships.",
+                "Reservation benefits for residents.",
+                "State-specific welfare schemes."
+            ],
+            "validity": "Lifetime, unless the applicant moves to another state."
+        },
+
+        "documents_needed": [
+            "Aadhaar card (Identity proof).",
+            "Voter ID / Ration card / Driving License (Address proof).",
+            "Birth certificate or School leaving certificate (to verify place of birth).",
+            "Property documents or Rent Agreement (to verify residence).",
+            "Electricity or water bill (as additional proof of residence).",
+            "Self-declaration stating residence details.",
+            "Passport-size photographs."
+        ],
+
+        "application_process": {
+            "steps": [
+                "Obtain the domicile certificate application form from the Tahsildar Office or state e-Seva portal.",
+                "Fill in the application form with required details.",
+                "Attach supporting documents and a self-declaration form.",
+                "Submit the application at the Revenue Office or upload online.",
+                "Pay the processing fee (if applicable).",
+                "Verification by local revenue officials.",
+                "Receive the domicile certificate upon successful verification."
+            ],
+            "processing_time": "10-15 working days.",
+            "where_to_apply": "Tahsildar Office, Revenue Office, or Online via the state e-Seva portal."
+        },
+
+        "cost": {
+            "processing_fee": "₹100 stamp duty + processing charges.",
+            "urgent_processing_fee": "₹200 for fast-track processing."
+        },
+
+        "renewal_or_duplicate_certificate": {
+            "when_needed": "Required if the original is lost or if corrections are needed.",
+            "renewal_process": [
+                "Submit a fresh application with updated residence proof.",
+                "Pay the renewal processing fee (₹50 - ₹100).",
+                "Receive the updated certificate within 7 working days."
+            ],
+            "duplicate_certificate": "Available upon application with an affidavit and fee of ₹50."
+        },
+
+        "common_questions": {
+            "is_domicile_certificate_mandatory_for_state_quota_admissions": "Yes, required for state government job applications and educational quotas.",
+            "can_a_person_have_domicile_in_two_states": "No, a person can hold a domicile certificate from only one state.",
+            "how_to_change_domicile_if_moved_to_a_new_state": "Apply for a new domicile certificate in the new state after meeting the residency requirements."
+        }
+    },
+
+    "income_certificate": {
+        "name": "Income Certificate",
+        "definition": "An official document certifying an individual's annual income, required for government schemes, scholarships, and reservations.",
+        "issuing_authority": "Tahsildar Office, Revenue Department, e-Seva Centers",
+
+        "eligibility": {
+            "who_can_apply": "Any individual requiring proof of income for government benefits or private institution requirements.",
+            "applicable_for": [
+                "Scholarships and educational benefits.",
+                "Reservation-based job applications.",
+                "Subsidized housing schemes.",
+                "Loan applications."
+            ],
+            "validity": "Usually valid for 1 year from the date of issue."
+        },
+
+        "documents_needed": [
+            "Aadhaar card.",
+            "Ration card (if applicable).",
+            "Salary slip or income statement from employer (for salaried individuals).",
+            "Income tax return or self-declaration (for self-employed individuals).",
+            "Bank statement of the last 6 months.",
+            "Property tax receipt (if applicable)."
+        ],
+
+        "application_process": {
+            "steps": [
+                "Obtain the application form from the Tahsildar Office or apply online via the e-Seva portal.",
+                "Fill in personal and income details.",
+                "Attach the required documents and self-declaration (if applicable).",
+                "Submit the form at the Revenue Office or upload it online.",
+                "Pay the processing fee (if applicable).",
+                "Tahsildar verifies the details and issues the certificate."
+            ],
+            "processing_time": "7-10 working days.",
+            "where_to_apply": "Tahsildar Office, Revenue Office, or Online at state e-district portal."
+        },
+
+        "cost": {
+            "processing_fee": "₹50 for a standard application.",
+            "urgent_processing_fee": "₹100 for tatkal (same-day processing)."
+        },
+
+        "renewal_or_duplicate_certificate": {
+            "when_needed": "If the certificate expires or is lost.",
+            "renewal_process": [
+                "Reapply with updated income proof and Aadhaar card.",
+                "Pay the renewal fee (₹50 - ₹100 depending on urgency).",
+                "Receive the renewed certificate within 7 working days."
+            ],
+            "duplicate_certificate": "Can be obtained with an application and nominal fee of ₹50."
+        },
+
+        "common_questions": {
+            "what_happens_if_income_changes": "A new certificate must be applied for with updated income details.",
+            "is_income_certificate_mandatory_for_scholarships": "Yes, required to determine eligibility for financial aid.",
+            "how_long_is_the_certificate_valid": "Typically valid for 1 year."
+        }
+    },
+
+   "passport": {
+        "name": "Passport",
+        "definition": "An official travel document issued by the Government of India that allows international travel and serves as identity proof.",
+        "issuing_authority": "Ministry of External Affairs (MEA), Government of India",
+
+        "types_of_passport": {
+            "ordinary_passport": "Issued to general citizens for international travel (Blue cover).",
+            "official_passport": "Issued to government employees for official travel (White cover).",
+            "diplomatic_passport": "Issued to diplomats and high-ranking government officials (Maroon cover)."
+        },
+
+        "eligibility": {
+            "who_can_apply": "Any Indian citizen seeking to travel internationally.",
+            "age_requirement": "No age restriction. Minors require parental consent.",
+            "validity": {
+                "Adults": "10 years",
+                "Minors": "5 years or until 18 years of age, whichever is earlier"
+            }
+        },
+
+        "documents_needed": {
+            "identity_proof": ["Aadhaar Card", "PAN Card", "Voter ID"],
+            "address_proof": ["Electricity Bill", "Ration Card", "Rental Agreement"],
+            "date_of_birth_proof": ["Birth Certificate", "School Leaving Certificate"],
+            "other_documents": ["Previous passport (for renewal)", "Marriage certificate (if applicable)"]
+        },
+
+        "application_process": {
+            "steps": [
+                "Visit https://passportindia.gov.in and register.",
+                "Fill out the online passport application form.",
+                "Schedule an appointment at the nearest Passport Seva Kendra (PSK).",
+                "Submit biometric data (fingerprints & photograph) at the PSK.",
+                "Undergo police verification (if applicable).",
+                "Receive the passport via post upon approval."
+            ],
+            "processing_time": {
+                "normal": "30-45 days",
+                "tatkal": "1-3 days (faster processing for urgent needs)"
+            },
+            "where_to_apply": "Online at https://passportindia.gov.in or at Passport Seva Kendra (PSK)."
+        },
+
+        "tatkal_passport_procedure": {
+            "eligibility": "For individuals who require an urgent passport due to medical, educational, or business reasons.",
+            "additional_documents_needed": ["Verification certificate from a Gazetted Officer", "Self-declaration stating urgency"],
+            "processing_fee": "₹3,500 (compared to ₹1,500 for normal passport).",
+            "processing_time": "1-3 days after successful verification."
+        },
+
+        "passport_renewal": {
+            "when_needed": "When passport is about to expire (apply 1 year before expiry) or pages are exhausted.",
+            "renewal_process": [
+                "Visit the Passport Seva website and fill out the renewal form.",
+                "Book an appointment at the Passport Seva Kendra.",
+                "Submit the old passport along with required documents.",
+                "Undergo verification if necessary.",
+                "Receive the renewed passport via post."
+            ],
+            "processing_time": "15-30 days",
+            "renewal_fee": "₹1,500 (normal) or ₹3,500 (tatkal)."
+        },
+
+        "lost_or_damaged_passport": {
+            "how_to_replace": [
+                "File an FIR at the local police station.",
+                "Apply for re-issuance at the Passport Seva Kendra.",
+                "Submit a self-declaration about the loss.",
+                "Provide identity proof, old passport details, and police report.",
+                "Pay re-issuance fee (₹3,500 for normal, ₹5,500 for tatkal)."
+            ]
+        },
+
+        "common_questions": {
+            "can_i_apply_for_a_passport_without_a_birth_certificate": "Yes, alternate documents such as school certificates can be submitted.",
+            "do_i_need_police_verification_for_passport": "Yes, unless applying for reissue under Tatkal scheme.",
+            "can_i_renew_my_passport_before_it_expires": "Yes, renewal is allowed up to 1 year before expiry."
+        },
+
+        "online_services": {
+            "apply_online": "https://passportindia.gov.in",
+            "check_application_status": "https://passportindia.gov.in/AppOnlineProject/statusTracker/trackStatusInpNew",
+            "passport_office_locator": "https://passportindia.gov.in/AppOnlineProject/locatePSK/locatePFC"
+        }
+    },
+
+    "driving_license": {
+        "name": "Driving License",
+        "definition": "A legal document authorizing individuals to operate motor vehicles.",
+        "issuing_authority": "Regional Transport Office (RTO)",
+
+        "types_of_license": {
+            "learner_license": "Temporary license issued for practice before getting a permanent license.",
+            "permanent_license": "Issued after passing the driving test.",
+            "commercial_license": "Required for driving transport or commercial vehicles.",
+            "international_driving_permit": "Allows driving in foreign countries with an Indian license."
+        },
+
+        "eligibility": {
+            "learner_license": {
+                "age_requirement": {
+                    "gearless_two_wheelers_below_50cc": "Minimum 16 years with parental consent.",
+                    "motorcycles_and_cars_with_gears": "Minimum 18 years.",
+                    "commercial_vehicles": "Minimum 20 years."
+                },
+                "other_requirements": "Basic knowledge of traffic rules."
+            },
+            "permanent_license": {
+                "requirements": "Must hold a learner's license for at least 30 days before applying for a permanent license."
+            }
+        },
+
+        "documents_needed": {
+            "identity_proof": ["Aadhaar Card", "Voter ID", "Passport"],
+            "address_proof": ["Ration Card", "Electricity Bill", "Rental Agreement"],
+            "date_of_birth_proof": ["Birth Certificate", "10th Marksheet"],
+            "passport_size_photos": "2-3 recent photos",
+            "medical_certificate": "Required for commercial license applications."
+        },
+
+        "application_process": {
+            "learner_license": {
+                "steps": [
+                    "Visit the RTO office or apply online at https://parivahan.gov.in.",
+                    "Submit the application form and required documents.",
+                    "Pay the application fee.",
+                    "Appear for the online theory test on traffic rules.",
+                    "If passed, receive the learner's license."
+                ],
+                "processing_time": "1-2 days",
+                "cost": "₹200"
+            },
+            "permanent_license": {
+                "steps": [
+                    "Hold a learner’s license for at least 30 days.",
+                    "Schedule a driving test appointment at the RTO.",
+                    "Appear for the driving test and demonstrate driving skills.",
+                    "If passed, receive the permanent license."
+                ],
+                "processing_time": "7-10 working days",
+                "cost": "₹500"
+            }
+        },
+
+        "renewal_procedure": {
+            "when_needed": "Driving license is valid for 20 years or until the applicant turns 40. Renewal required thereafter every 5 years (for private vehicles) and every 3 years (for commercial vehicles).",
+            "steps": [
+                "Visit the RTO or apply online for renewal.",
+                "Submit the expired license and required documents.",
+                "Pay the renewal fee (₹200 - ₹500).",
+                "Undergo medical fitness test if required.",
+                "Receive the renewed license."
+            ],
+            "processing_time": "7-10 days"
+        },
+
+        "tatkal_license_procedure": {
+            "eligibility": "For applicants needing an urgent license due to employment or travel reasons.",
+            "additional_documents_needed": ["Employer certificate (if applicable)", "Self-declaration for urgency"],
+            "processing_time": "Within 3-5 days",
+            "cost": "Additional ₹1,000 on regular fees"
+        },
+
+        "international_driving_permit": {
+            "eligibility": "Applicants must hold a valid Indian driving license.",
+            "documents_needed": [
+                "Valid Indian driving license",
+                "Visa copy for the destination country",
+                "Passport",
+                "Medical certificate"
+            ],
+            "processing_time": "3-5 days",
+            "cost": "₹1,000 - ₹1,500"
+        },
+
+        "duplicate_license": {
+            "when_needed": "If the original license is lost, stolen, or damaged.",
+            "steps": [
+                "File an FIR for lost license (optional but recommended).",
+                "Visit the RTO and submit the duplicate license application.",
+                "Attach required documents and pay the duplicate license fee.",
+                "Receive the duplicate license."
+            ],
+            "processing_time": "7-14 days",
+            "cost": "₹200 - ₹500"
+        },
+
+        "common_questions": {
+            "can_i_drive_with_a_learner_license": "Yes, but only with an experienced driver (permanent license holder) present.",
+            "how_long_is_a_learner_license_valid": "6 months from the date of issue.",
+            "can_i_renew_my_license_after_expiry": "Yes, but if expired for more than 1 year, a driving test may be required."
+        },
+
+        "online_services": {
+            "apply_for_license": "https://parivahan.gov.in",
+            "track_application_status": "https://parivahan.gov.in/rcdlstatus",
+            "book_driving_test_appointment": "https://sarathi.parivahan.gov.in"
+        }
+    },
+
+    "land_registration": {
+        "name": "Land Registration Certificate",
+        "definition": "Legal document confirming ownership and registration of land or property.",
+        "eligibility": "Applicable to landowners, property buyers, legal inheritors, or institutions acquiring land.",
+
+        "types_of_land_registration": {
+            "sale_deed": {
+                "definition": "A legal document transferring ownership of land/property from seller to buyer.",
+                "applicable_for": "Buying and selling of land, apartments, and buildings.",
+                "requirements": [
+                    "Original sale deed from the previous owner",
+                    "Encumbrance Certificate (EC)",
+                    "Property tax receipts",
+                    "Identity proof of buyer and seller",
+                    "Stamp duty and registration fee payment proof"
+                ],
+                "processing_time": "15-30 days"
+            },
+            "gift_deed": {
+                "definition": "A deed used to transfer property as a gift without monetary exchange.",
+                "applicable_for": "Gifting property to family members or relatives.",
+                "requirements": [
+                    "Original property title deed",
+                    "Encumbrance Certificate (EC)",
+                    "Identity proof of both parties",
+                    "Legal stamp duty applicable as per state laws"
+                ],
+                "processing_time": "7-15 days"
+            },
+            "partition_deed": {
+                "definition": "A deed for legally dividing property among family members or joint owners.",
+                "applicable_for": "Family inheritance, business property division.",
+                "requirements": [
+                    "Family settlement agreement",
+                    "Encumbrance Certificate (EC)",
+                    "Identity proof of all owners",
+                    "Stamp duty applicable on divided portions"
+                ],
+                "processing_time": "20-30 days"
+            },
+            "lease_deed": {
+                "definition": "A deed granting temporary possession of a property to a tenant.",
+                "applicable_for": "Rental agreements for residential or commercial properties.",
+                "requirements": [
+                    "Landlord and tenant identity proof",
+                    "Property tax receipts",
+                    "Stamp duty for lease agreement"
+                ],
+                "processing_time": "5-10 days"
+            },
+            "mortgage_deed": {
+                "definition": "A deed to pledge property as security for a loan.",
+                "applicable_for": "Taking loans by using property as collateral.",
+                "requirements": [
+                    "Property title deed",
+                    "Loan sanction letter from bank",
+                    "Encumbrance Certificate (EC)"
+                ],
+                "processing_time": "7-15 days"
+            },
+            "exchange_deed": {
+                "definition": "A deed for property exchange between two owners.",
+                "applicable_for": "Swapping land or property between parties.",
+                "requirements": [
+                    "Ownership documents of both parties",
+                    "Encumbrance Certificate (EC)",
+                    "Stamp duty on exchanged value"
+                ],
+                "processing_time": "15-30 days"
+            }
+        },
+
+        "stamp_duty_and_fees": {
+            "definition": "Government-imposed tax on property registration, varying by state.",
+            "applicable_on": "Sale deed, gift deed, mortgage deed, partition deed, etc.",
+            "stamp_duty_rates": {
+                "sale_deed": "5-7% of market value of the property",
+                "gift_deed": "2-5% of property value",
+                "partition_deed": "1-3% of property value",
+                "lease_deed": "2-5% of lease amount",
+                "mortgage_deed": "1-2% of loan amount",
+                "exchange_deed": "5-7% of exchanged property value"
+            },
+            "registration_fees": "Around 1% of the property value (varies by state)",
+            "other_charges": "Legal fees, document preparation charges, and court fees (if applicable)."
+        },
+
+        "mutation_process": {
+            "definition": "Updating government land records to reflect ownership changes after registration.",
+            "when_required": [
+                "After property purchase",
+                "After property inheritance",
+                "After a gift or will-based transfer"
+            ],
+            "steps": [
+                "Submit application at local revenue office or online portal.",
+                "Attach Sale Deed, Encumbrance Certificate (EC), and property tax receipts.",
+                "Revenue department verifies the ownership details.",
+                "Field surveyor inspects property if required.",
+                "Mutation is approved, and new ownership is recorded."
+            ],
+            "processing_time": "30-45 days",
+            "where_to_apply": "Municipal revenue office or state land records portal."
+        },
+
+        "encumbrance_certificate": {
+            "definition": "A document verifying that the property is free from any legal disputes or pending loans.",
+            "importance": [
+                "Required for property registration and ownership transfer.",
+                "Ensures that the land has no legal dues or claims."
+            ],
+            "how_to_obtain": [
+                "Apply at the Sub-Registrar Office (SRO) where the property is registered.",
+                "Submit ownership documents and previous sale deed.",
+                "Pay the applicable fee and get an EC for 10-30 years."
+            ],
+            "processing_time": "3-7 working days",
+            "where_to_apply": "https://tnreginet.gov.in for Tamil Nadu"
+        },
+
+        "online_verification": {
+            "purpose": "To check property ownership, past transactions, and encumbrances online.",
+            "where_to_verify": [
+                "State government property registration portals (e.g., https://tnreginet.gov.in for Tamil Nadu)",
+                "Revenue department online services"
+            ],
+            "required_details": [
+                "Survey number of the land",
+                "Property registration number",
+                "Owner details"
+            ],
+            "verification_process": [
+                "Visit the online portal.",
+                "Enter property details (registration number or survey number).",
+                "View land records and encumbrance details."
+            ]
+        },
+
+        "common_queries": {
+            "disputed_property": "Legal clearance and court orders required for disputed properties before registration.",
+            "joint_ownership": "Property can be jointly registered with multiple owners with specified ownership shares.",
+            "loss_of_documents": "Duplicate certified copies can be obtained from the Sub-Registrar Office upon submission of an affidavit and FIR copy.",
+            "gift_deed_vs_sale_deed": "Gift Deed involves no monetary transaction; Sale Deed involves financial exchange and attracts higher stamp duty.",
+            "ancestral_property_claim": "Ancestral property can be claimed by legal heirs through partition deed registration."
+        }
+    },
+
+    "electricity_bill": {
+    "name": "Electricity Bill",
+    "definition": "Official document showing electricity consumption and payment details for a household or business.",
+    "issuing_authority": "State Electricity Board (e.g., TANGEDCO in Tamil Nadu)",
+
+    "new_connection": {
+        "eligibility": "Any homeowner, tenant, or business needing a legal electricity supply.",
+        "documents_needed": [
+            "ID proof (Aadhaar, PAN, Voter ID)",
+            "Address proof (Rental Agreement, Property Tax Receipt)",
+            "Property Ownership Document (Sale Deed, Patta, Lease Agreement)",
+            "Previous Electricity Bill (if applicable)"
+        ],
+        "steps": [
+            "Visit the nearest Electricity Board office or apply online.",
+            "Submit the application form along with the required documents.",
+            "Pay the applicable security deposit and processing fee.",
+            "Verification and inspection by the electricity department.",
+            "Meter installation and connection activation."
+        ],
+        "cost": {
+            "domestic": "₹1,000 - ₹5,000 (depends on load capacity)",
+            "commercial": "₹5,000 - ₹20,000 (depends on business type and load)"
+        },
+        "processing_time": "7-15 working days",
+        "where_to_apply": "Electricity Board Office or https://www.tnebltd.gov.in for Tamil Nadu"
+    },
+
+    "bill_payment": {
+        "modes_of_payment": [
+            "Online (Net banking, UPI, Credit/Debit card)",
+            "Electricity Board Office (Cash, Cheque, Demand Draft)",
+            "Authorized Payment Centers (Post Offices, Banks, CSC Centers)"
+        ],
+        "online_payment_steps": [
+            "Visit the official electricity board website.",
+            "Enter consumer number and verify details.",
+            "Select payment method and complete the transaction.",
+            "Download the receipt for future reference."
+        ],
+        "late_payment_penalty": {
+            "0-30 days": "1% of outstanding bill",
+            "30-60 days": "2% of outstanding bill",
+            "60+ days": "Service disconnection notice issued"
+        }
+    },
+
+    "name_change_in_bill": {
+        "when_required": "Ownership transfer, sale of property, inheritance, or rental agreements.",
+        "documents_needed": [
+            "Sale Deed or Property Transfer Document",
+            "Previous Electricity Bill",
+            "No Objection Certificate (NOC) from the previous owner",
+            "Aadhaar or PAN card of new owner",
+            "Affidavit for name change"
+        ],
+        "steps": [
+            "Obtain name change application form from the Electricity Board office or website.",
+            "Submit the completed form with required documents.",
+            "Pay processing fee (₹250 - ₹1,000, depending on region).",
+            "Verification and approval by the electricity department.",
+            "New bill generated with updated name."
+        ],
+        "processing_time": "10-30 working days"
+    },
+
+    "duplicate_bill": {
+        "when_needed": "Loss of the original bill, payment proof required for records.",
+        "how_to_get": [
+            "Visit the official website and log in with the consumer number.",
+            "Download the duplicate bill from the 'Bill History' section.",
+            "Request a physical copy at the nearest Electricity Board office."
+        ],
+        "fee": "Free for online download, ₹50 for printed copy from the office."
+    },
+
+    "electricity_meter_issues": {
+        "common_problems": [
+            "Faulty meter readings",
+            "No power supply despite bill payment",
+            "Meter tampering or damage"
+        ],
+        "complaint_filing_steps": [
+            "Contact the local Electricity Board customer service.",
+            "Provide consumer number and issue details.",
+            "Request technician visit for inspection.",
+            "If unresolved, escalate to higher authorities or Electricity Ombudsman."
+        ],
+        "emergency_contacts": "TANGEDCO Helpline: 1912"
+    },
+
+    "online_services": {
+        "bill_view_and_payment": "https://www.tnebltd.gov.in",
+        "application_for_new_connection": "https://nsc.tnebltd.gov.in",
+        "grievance_redressal": "https://tnebnet.org/ccms/"
+    },
+
+    "common_questions": {
+        "change_tariff_category": "Apply with proof of usage change (residential to commercial or vice versa).",
+        "connection_disconnection": "Submit a written request with ID proof and final bill payment.",
+        "power outage complaint": "Call 1912 or register online on the TANGEDCO portal."
+    }
+},
+
+    "caste_certificate": {
+    "name": "Caste Certificate",
+    "definition": "An official document certifying a person’s caste, especially useful for availing government benefits like reservations in education, jobs, and welfare schemes.",
+    "issuing_authority": "Revenue Department / Tehsildar Office / District Magistrate",
+    "processing_time": "7-21 days",
+    "where_to_apply": "Tehsil/Taluk Office, District Magistrate Office, or e-Sevai Portal (Tamil Nadu: https://www.tnesevai.tn.gov.in)",
+
+    "eligibility": [
+        "Applicant must belong to a Scheduled Caste (SC), Scheduled Tribe (ST), or Other Backward Class (OBC).",
+        "Family caste should be officially recognized in the state’s caste list.",
+        "Must be a resident of the state where the certificate is applied."
+    ],
+
+    "documents_needed": [
+        "Identity Proof (Aadhaar Card, Voter ID, Passport)",
+        "Address Proof (Ration Card, Electricity Bill, Rental Agreement)",
+        "Caste Proof (Parent’s Caste Certificate, Community Certificate, or School Leaving Certificate with caste details)",
+        "Income Certificate (if applying for caste-based financial benefits)",
+        "Self-Declaration / Affidavit",
+        "Passport-size Photographs"
+    ],
+
+    "cost": "₹0 - ₹100 (Varies by state)",
+
+    "steps": [
+        "Visit the official state portal or the nearest Tehsildar Office.",
+        "Fill out the Caste Certificate Application Form.",
+        "Attach required documents and submit to the issuing authority.",
+        "Verification is conducted by the Village Administrative Officer (VAO) and revenue officers.",
+        "If approved, the certificate is issued physically or can be downloaded online."
+    ],
+
+    "renewal": {
+        "when_required": "Caste certificates are usually valid for a lifetime but may need renewal if additional verification is required for specific purposes.",
+        "renewal_process": [
+            "Submit the previous caste certificate and identity proof.",
+            "Provide updated income certificate (if applicable).",
+            "Verification by the revenue department.",
+            "Issuance of the renewed certificate."
+        ],
+        "processing_time": "5-15 working days"
+    },
+
+    "duplicate_certificate": {
+        "when_needed": "If the original certificate is lost, damaged, or misplaced.",
+        "process": [
+            "File an FIR (First Information Report) at the nearest police station.",
+            "Obtain an affidavit stating the loss of the original document.",
+            "Submit an application for a duplicate certificate along with FIR copy, affidavit, and identity proof.",
+            "Verification by revenue officers before reissuance."
+        ],
+        "processing_time": "7-14 working days"
+    },
+
+    "common_questions": {
+        "Can I apply for a Caste Certificate online?": "Yes, you can apply through the state government's e-Sevai website.",
+        "Is the Caste Certificate valid for a lifetime?": "Yes, it is generally valid for a lifetime unless specified otherwise.",
+        "How long does it take to get a Caste Certificate?": "Processing time varies between 7-21 days depending on verification."
+    }
+},
+
+    "death_certificate": {
+        "name": "Death Certificate",
+        "definition": "An official document issued by the government that records the date, time, and cause of a person’s death, required for legal and administrative purposes.",
+        "issuing_authority": "Municipal Corporation / Panchayat Office / Registrar of Births and Deaths",
+        "processing_time": "7-14 days",
+        "where_to_apply": "Local Municipality Office, Panchayat Office, or state e-Governance portal",
+
+        "eligibility": [
+            "The deceased person’s relative or legal heir can apply.",
+            "Hospital authorities can register the death if it occurred in a hospital.",
+            "For home deaths, the family or a local official (Village Administrative Officer) can apply."
+        ],
+
+        "documents_needed": [
+            "Death Report from Hospital or Doctor (if applicable)",
+            "Aadhaar Card or Identity Proof of the deceased",
+            "Residence Proof (Ration Card, Electricity Bill, etc.)",
+            "Application Form from the local registrar's office",
+            "Affidavit (if there is a delay in registration)",
+            "Medical Certificate stating cause of death (if available)"
+        ],
+
+        "cost": "Free if applied within 21 days of death; Late registration fees apply after 21 days.",
+
+        "application_process": {
+            "steps": [
+            "Report the death within 21 days to the local authority (Municipality/Panchayat Office).",
+            "Obtain the Death Report from the hospital or village head (if applicable).",
+            "Fill out the Death Certificate application form.",
+            "Submit necessary identity proofs and supporting documents.",
+            "After verification, the certificate is issued within 7-14 days."
+        ]
+        },
+
+        "renewal": {
+            "when_required": "Not applicable as Death Certificates do not expire.",
+            "additional_info": "Corrections in name or details can be made through an affidavit and supporting documents."
+        },
+
+        "duplicate_certificate": {
+            "when_needed": "If the original certificate is lost or damaged.",
+            "process": [
+                "Apply at the local Municipality/Panchayat Office with an affidavit.",
+                "Provide a copy of the previous application number or any proof of death registration.",
+                "Reissuance takes around 7-14 days."
+            ],
+            "processing_time": "7-14 working days"
+        },
+
+        "common_questions": {
+            "Is a Death Certificate mandatory?": "Yes, it is required for legal and financial purposes such as property claims and insurance settlements.",
+            "Can I get a Death Certificate online?": "Yes, in most states, you can apply online via the respective government portal.",
+            "What happens if a Death Certificate is not registered within 21 days?": "A late registration fee applies, and an affidavit may be required."
+        }
+    },
+
+    "pan_card": {
+    "name": "PAN Card",
+    "definition": "Permanent Account Number (PAN) is a unique 10-digit alphanumeric identifier issued by the Income Tax Department of India for individuals and entities for tax purposes.",
+    "issuing_authority": "Income Tax Department of India (NSDL or UTIITSL)",
+    "eligibility": [
+        "Any Indian citizen above 18 years of age.",
+        "Minors (through guardians), companies, NRIs, and foreign nationals doing business in India."
+    ],
+    "documents_needed": [
+        "Proof of Identity (Aadhaar Card, Voter ID, Passport)",
+        "Proof of Address (Utility Bill, Aadhaar, Passport, Rent Agreement)",
+        "Proof of Date of Birth (Birth Certificate, 10th Marksheet, Passport)",
+        "Passport-size Photograph",
+        "For companies: Registration certificate and company PAN application"
+    ],
+    "application_process": [
+        "Visit the official NSDL (https://www.tin-nsdl.com) or UTIITSL (https://www.pan.utiitsl.com) website.",
+        "Fill in Form 49A (for individuals) or 49AA (for foreigners).",
+        "Upload required documents and photograph.",
+        "Pay application fee online (₹93 for Indian communication address, ₹864 for foreign address).",
+        "Receive PAN via post within 15-20 days after verification."
+    ],
+    "processing_time": "15-20 working days",
+    "duplicate_pan": {
+        "when_needed": "If PAN card is lost, stolen, damaged, or requires reprint.",
+        "steps": [
+            "Visit NSDL or UTIITSL PAN services page.",
+            "Select ‘Reprint of PAN Card’ option.",
+            "Enter existing PAN number and personal details.",
+            "Submit ID/address proof and pay reprint fee (₹50-₹100)."
+        ],
+        "processing_time": "7-10 days"
+    },
+    "corrections_or_update": {
+        "when_required": "Change of name, date of birth, address, or contact information.",
+        "steps": [
+            "Apply for PAN correction online via NSDL or UTI portal.",
+            "Upload supporting documents for the requested change.",
+            "Submit and pay applicable fees."
+        ],
+        "processing_time": "10-15 working days"
+    },
+    "common_questions": {
+        "Is PAN mandatory for bank accounts?": "Yes, PAN is mandatory for opening a bank account and for transactions above ₹50,000.",
+        "Can a person have two PAN cards?": "No. Having more than one PAN is illegal and punishable.",
+        "How can I check PAN status?": "Track PAN application status on NSDL or UTI portal using acknowledgment number."
+    }
+},
+
+    "ration_card": {
+    "name": "Ration Card",
+    "definition": "An official document issued by the state government for purchasing subsidized food and essential items under the Public Distribution System (PDS).",
+    "issuing_authority": "State Civil Supplies and Consumer Affairs Department",
+    "eligibility": [
+        "Permanent resident of the respective state.",
+        "Applicant must not already possess a ration card in any other state.",
+        "Must meet income-based eligibility for BPL/APL category (as per state norms)."
+    ],
+    "types_of_ration_cards": {
+        "bpl": "Below Poverty Line (BPL) – for families below the poverty line.",
+        "apl": "Above Poverty Line (APL) – for families above the poverty line.",
+        "aay": "Antyodaya Anna Yojana – for the poorest of the poor households."
+    },
+    "documents_needed": [
+        "Proof of Residence (Aadhaar, Electricity Bill, Rent Agreement)",
+        "Identity Proof of head of family (Aadhaar, Voter ID, PAN)",
+        "Passport-size photographs of all family members",
+        "Income Certificate",
+        "Surrender Certificate if transferring from another state"
+    ],
+    "application_process": [
+        "Apply online via state food and civil supplies portal or visit the local ration office.",
+        "Fill in the application form with household details.",
+        "Upload/submit supporting documents.",
+        "Application will be verified by local officer (e.g., VAO or ration inspector).",
+        "Ration card issued digitally or physically after approval."
+    ],
+    "processing_time": "15-30 working days",
+    "where_to_apply": "https://tnpds.gov.in (Tamil Nadu) or respective state’s PDS portal",
+    "duplicate_card": {
+        "when_needed": "If the original ration card is lost or damaged.",
+        "steps": [
+            "File an FIR for lost card (if required).",
+            "Apply online/offline with proof of identity and address.",
+            "Pay nominal reprint charges.",
+            "Card reissued after verification."
+        ],
+        "processing_time": "7-15 working days"
+    },
+    "correction_or_update": {
+        "when_required": "For address change, addition/deletion of family member, correction of name or date of birth.",
+        "steps": [
+            "Submit correction request via PDS portal or in-person.",
+            "Upload necessary documents for requested update.",
+            "Get revised card after department approval."
+        ],
+        "processing_time": "10-20 working days"
+    },
+    "common_questions": {
+        "Can I apply for ration card online?": "Yes, through your state’s civil supplies department website.",
+        "What happens if someone has multiple ration cards?": "It is illegal and punishable; the extra cards must be surrendered.",
+        "Can a ration card be used as ID proof?": "Yes, it is accepted as valid ID and address proof."
+    }
+}
+}
